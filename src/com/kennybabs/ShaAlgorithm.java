@@ -14,6 +14,7 @@ public class ShaAlgorithm {
             ShaAlgorithm solution = new ShaAlgorithm();
             String hashOutput =  solution.getSHA256Hash(scanner.nextLine());
             System.out.println(hashOutput);
+            scanner.close();
         }
 
         private String getSHA256Hash(String s) throws NoSuchAlgorithmException {
